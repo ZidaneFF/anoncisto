@@ -10,7 +10,7 @@ class BroadcastSocket(tornado.websocket.WebSocketHandler):
         print("WebSocket opened")
 
     def on_message(self, message):
-    	
+
     	print message
 
     	for socket in sockets:
@@ -35,6 +35,5 @@ if __name__ == "__main__":
         ])
     app.listen(port)
 
-    print "Listening on ", port
+    print "Listening on", port
     tornado.ioloop.IOLoop.current().start()
-
