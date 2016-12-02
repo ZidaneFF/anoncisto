@@ -1,4 +1,3 @@
-Requres Tornado
+Requires Tornado
 
 > pip install tornado
-
